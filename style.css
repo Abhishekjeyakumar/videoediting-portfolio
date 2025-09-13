@@ -85,8 +85,16 @@ iframe, .card img {
   align-items:center; gap:1.5rem;
 }
 .profile-pic {
-  width:150px; border-radius:50%; border:3px solid #ff4081;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #ff4081;
+  object-fit: contain;  /* ensures the whole image is visible */
+  background-color: black; /* adds a background behind empty space */
+  display: block;
+  margin: 0 auto;
 }
+
 
 /* Services */
 .services-grid {
