@@ -13,3 +13,10 @@ document.getElementById('contact-form').addEventListener('submit', e => {
   alert('Thank you for reaching out! I’ll get back to you soon.');
   e.target.reset();
 });
+// Hamburger menu toggle
+const toggleButton = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('nav ul');
+
+toggleButton.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+});
